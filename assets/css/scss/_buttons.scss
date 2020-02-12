@@ -13,7 +13,7 @@
   vertical-align: middle;
   user-select: none;
   background-color: transparent;
-  border: $btn-border-width solid transparent;
+  // border: $btn-border-width solid transparent;
   @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius);
   @include transition($btn-transition);
 
@@ -24,23 +24,27 @@
 
   &:focus,
   &.focus {
-    outline: 0;
-    box-shadow: $btn-focus-box-shadow;
+    outline: none;
+    // box-shadow: $btn-focus-box-shadow;
+    box-shadow: 0 .125rem .25rem rgba($black, .25) !important;
   }
 
   // Disabled comes first so active can properly restyle
   &.disabled,
   &:disabled {
     opacity: $btn-disabled-opacity;
-    @include box-shadow(none);
+    box-shadow: 0 .125rem .25rem rgba($black, .25) !important;
   }
 
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active {
-    @include box-shadow($btn-active-box-shadow);
+    // @include box-shadow($btn-active-box-shadow);
+    box-shadow: 0 .125rem .25rem rgba($black, .25) !important;
+
 
     &:focus {
-      @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+      // @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+      box-shadow: 0 .125rem .25rem rgba($black, .25) !important;
     }
   }
 }

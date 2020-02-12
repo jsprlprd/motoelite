@@ -1,0 +1,12 @@
+{
+  "name": "MotoElite",
+  "short_name": "MotoElite",
+  "theme_color": "#007bff",
+  "background_color": "#007bff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "Scope": "/",
+  "start_url": "/",
+  "icons": null,
+  "splash_pages": null
+}
