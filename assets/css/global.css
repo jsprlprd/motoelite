@@ -1,3 +1,12 @@
+body {
+  background-color: #F1F2F3;
+  padding-top: 56px;
+}
+
+.navbar {
+  background-color: #FFFFFF;
+}
+
 .heading {
   margin-top: 40px;
   margin-bottom: 24px;
@@ -48,3 +57,31 @@
   height: 40px;
   font-size: 18px;
 }
+
+
+#device-list .list-group-item {
+
+}
+
+#device-list .list-group-item {
+padding-left: 24px;
+}
+
+
+#device-list .list-group-item {
+  border: 0;
+  border-radius: 4px;
+  margin-bottom: 0;
+}
+
+#device-list .list-group-item:hover {
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.15) !important;
+  transition: all .250s;
+  z-index: 1;
+}
+
+#device-list .list-group-item + .list-group-item {
+  margin-top: 4px;
+}
+
+
