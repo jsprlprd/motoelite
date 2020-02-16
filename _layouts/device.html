@@ -19,23 +19,19 @@ layout: default
 <div class="footer fixed-bottom border-top">
   <div class="media">
     <div class="media-body">
-      <ul class="nav nav-pills nav-justified">
-        <li class="nav-item">
-          <a class="btn btn-light btn-pills active" data-toggle="tab" href="#device-locate-tab">
-            <i class="nav-link-icon fas fa-location-arrow"></i>
-            <span class="nav-link-text">Locate</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="btn btn-light btn-pills" data-toggle="tab" href="#device-replay-tab">
-            <i class="nav-link-icon fas fa-video"></i>
-            <span class="nav-link-text">Replay</span>
-          </a>
-        </li>
-      </ul>
+
+
+      {% include components/molecules/nav-menu.html
+        nav-type="nav-pills"
+        isLarge=""
+        isStacked=""
+        isJustified="nav-justified"
+        list-value-name=site.data.navigation.global
+        hasIcon="true"
+      %}
     </div>
     <div class="ml-3">
-      <a class="more-option" href="#"><i class="material-icons">expand_less</i></a>
+      <a class="more-option" href="{{ site.baseurl }}/device/command.html"><i class="material-icons">expand_less</i></a>
     </div>
   </div>
 </div>
