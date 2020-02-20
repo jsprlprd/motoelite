@@ -1,0 +1,79 @@
+---
+layout: login
+---
+
+<form class="login-form">
+  <div class="heading">
+    <h1 class="heading-title h3">Sign In</h1>
+    <p class="heading-subtitle">with your Moto Elite account</p>
+  </div>
+  <p class="text-muted">Enter your <b>Username</b> and <b>Password</b></p>
+
+  {% include components/molecules/form-group/input.html 
+    form-layout=""
+    isInputLarge=""
+    isInputRequired=""
+    hasFormLabel="none"
+    form-label-size=""
+    form-label-text=""
+    input-size=""
+    input-type="text"
+    input-name="username"
+    input-value=""
+    input-placeholder="Username"
+    hasFormIcon="none"
+    form-icon-name=""
+    form-icon-placement=""
+    hasFormHelper=""
+    form-helper-text=""
+  %}
+
+  {% include components/molecules/form-group/input.html 
+    form-layout=""
+    isInputLarge=""
+    isInputRequired=""
+    hasFormLabel="none"
+    form-label-size=""
+    form-label-text=""
+    input-size=""
+    input-type="password"
+    input-name="password"
+    input-value=""
+    input-placeholder="Password"
+    hasFormIcon="none"
+    form-icon-name=""
+    form-icon-placement=""
+    hasFormHelper=""
+    form-helper-text=""
+  %}
+  <div class="button-group">
+    <a class="btn btn-primary btn-block" href="{{ site.baseurl }}/">Login</a>
+  </div>
+</form>
+
+
+<div class="footer fixed-bottom d-flex justify-content-between">
+  <div class="dropup">
+    <a class="btn btn-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English</a>
+
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <a class="dropdown-item active" href="#">English</a>
+      <a class="dropdown-item" href="#">Arabic</a>
+      <a class="dropdown-item" href="#">Spanish</a>
+      <a class="dropdown-item" href="#">French</a>
+      <a class="dropdown-item" href="#">Portuguese</a>
+      <a class="dropdown-item" href="#">Ukraine</a>
+      <a class="dropdown-item" href="#">Russian</a>
+    </div>
+  </div>
+
+  <div class="dropup">
+    <a class="btn btn-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Elite Server 2</a>
+
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <a class="dropdown-item" href="#">Elite Server 1</a>
+      <a class="dropdown-item active" href="#">Elite Server 2</a>
+      <a class="dropdown-item" href="#">Elite Server 3</a>
+    </div>
+  </div>
+</div>

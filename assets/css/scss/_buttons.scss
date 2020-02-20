@@ -25,8 +25,7 @@
   &:focus,
   &.focus {
     outline: none;
-    // box-shadow: $btn-focus-box-shadow;
-    box-shadow: 0 .125rem .25rem rgba($black, .25) !important;
+    box-shadow: $btn-focus-box-shadow;
   }
 
   // Disabled comes first so active can properly restyle
@@ -38,13 +37,11 @@
 
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active {
-    // @include box-shadow($btn-active-box-shadow);
-    box-shadow: 0 .125rem .25rem rgba($black, .25) !important;
+    @include box-shadow($btn-active-box-shadow);
 
 
     &:focus {
-      // @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
-      box-shadow: 0 .125rem .25rem rgba($black, .25) !important;
+      @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
     }
   }
 }

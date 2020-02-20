@@ -126,3 +126,25 @@ padding-left: 24px;
 .btn-pills {
   border-radius: 9999px;
 }
+
+
+.fab-speed {
+  width: 56px;
+  height: 56px;
+  background-color: #FFFFFF;
+  border-radius: 9999px;
+  margin-bottom: 16px;
+  padding: 12px;
+  text-align: center;
+  line-height: 1;
+}
+
+.speed-indicator {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.speed-unit {
+  font-size: 12px;
+  margin-bottom: 0;
+}
