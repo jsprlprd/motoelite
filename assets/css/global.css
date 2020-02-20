@@ -148,3 +148,10 @@ padding-left: 24px;
   font-size: 12px;
   margin-bottom: 0;
 }
+
+
+.media-icon {
+  width: 16px;
+  margin-right: 8px;
+  text-align: center;
+}
